@@ -2,15 +2,7 @@
     "T test cases starter": {
         "prefix": "ttt",
         "body": [
-          "#include <algorithm>",
-          "#include <ios>",
-          "#include <iostream>",
-          "#include <map>",
-          "#include <numeric>",
-          "#include <queue>",
-          "#include <set>",
-          "#include <utility>",
-          "#include <vector>",
+          "#include <bits/stdc++.h>",
           "",
           "using namespace std;",
           "using llong = long long;",
@@ -37,15 +29,7 @@
     "Normal CP starter": {
       "prefix": "worm",
       "body": [
-        "#include <algorithm>",
-        "#include <ios>",
-        "#include <iostream>",
-        "#include <map>",
-        "#include <numeric>",
-        "#include <queue>",
-        "#include <set>",
-        "#include <utility>",
-        "#include <vector>",
+        "#include <bits/stdc++.h>",
         "",
         "using namespace std;",
         "using llong = long long;",
