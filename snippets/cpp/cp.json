@@ -1,0 +1,113 @@
+{
+    "T test cases starter": {
+        "prefix": "ttt",
+        "body": [
+          "#include <algorithm>",
+          "#include <ios>",
+          "#include <iostream>",
+          "#include <map>",
+          "#include <numeric>",
+          "#include <queue>",
+          "#include <set>",
+          "#include <utility>",
+          "#include <vector>",
+          "",
+          "using namespace std;",
+          "using llong = long long;",
+          "",
+          "void solve() {",
+          "  ${1://start coding}",
+          "}",
+          "",
+          "int main() {",
+          "  ios_base::sync_with_stdio(false);",
+          "  cin.tie(nullptr);",
+          "",
+          "  int t = 1;",
+          "  cin >> t;",
+          "  while (t--) {",
+          "    solve();",
+          "  }",
+          "",
+          "  return 0;",
+          "}"
+        ],
+        "description": "T test cases starter"
+    },
+    "Normal CP starter": {
+      "prefix": "worm",
+      "body": [
+        "#include <algorithm>",
+        "#include <ios>",
+        "#include <iostream>",
+        "#include <map>",
+        "#include <numeric>",
+        "#include <queue>",
+        "#include <set>",
+        "#include <utility>",
+        "#include <vector>",
+        "",
+        "using namespace std;",
+        "using llong = long long;",
+        "",
+        "int main() {",
+        "  ios_base::sync_with_stdio(false);",
+        "  cin.tie(nullptr);",
+        "",
+        "  ${1://start coding}",
+        "",
+        "  return 0;",
+        "}"
+      ],
+      "description": "Normal CP starter"
+    },
+    "Disjoint Set Union": {
+      "prefix": "sdsu",
+      "body": [
+        "class dsu {",
+        "public:",
+        "  int n;",
+        "  std::vector<int> p;",
+        "  dsu(int _n) : n(_n) {",
+        "    p.resize(n);",
+        "    std::iota(p.begin(), p.end(), 0);",
+        "  }",
+        "  int get(int x) { return (p[x] == x ? x : p[x] = get(p[x])); }",
+        "  bool same(int a, int b) {",
+        "    a = get(a);",
+        "    b = get(b);",
+        "    return a != b;",
+        "  }",
+        "  bool unite(int a, int b) {",
+        "    a = get(a);",
+        "    b = get(b);",
+        "    if (a != b) {",
+        "      p[a] = b;",
+        "      return true;",
+        "    }",
+        "    return false;",
+        "  }",
+        "};"
+      ],
+      "description": "Disjoint Set Union"
+    },
+    "GCD function": {
+        "prefix": "sgcd",
+        "body": [
+            "int gcd(int a, int b) { return (b == 0 ? a : gcd(b, a % b)); }",
+            "llong gcd(llong a, llong b) { return (b == 0 ? a : gcd(b, a % b)); }",
+            ""
+        ],
+        "description": "GCD function"
+    },
+    "Bit Manipulation": {
+        "prefix": "sbits",
+        "body": [
+          "int bits(int a) { return __builtin_popcount(a); }",
+          "int bits(llong a) { return __builtin_popcountll(a); }",
+          "int lastbit(int n) { return ((n ^ (n - 1)) + 1) / 2; }",
+          "llong lastbit(llong n) { return ((n ^ (n - 1)) + 1) / 2; }"
+        ],
+        "description": "Bit manipulation helpers"
+    }
+}
